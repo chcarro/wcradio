@@ -42,7 +42,8 @@
 	padding: 0 20px;
 }
 
-.plugin #providers.providers_unpaginated .providers_group .providers_block {
+.plugin #providers.providers_unpaginated .providers_group .providers_block
+	{
 	padding: 0 !important;
 }
 
@@ -102,6 +103,13 @@
 .plugin #providers .provider {
 	float: left;
 	outline: 0 none;
+	width: 178px !important;
+	padding: 2px 4px 4px 2px;
+	opacity: 0.9;
+}
+
+.plugin #providers .provider:hover {
+	opacity: 1;
 }
 
 .plugin #providers .provider .button {
@@ -111,6 +119,17 @@
 	position: relative;
 	z-index: 9998;
 	outline: 0 none;
+	background-image: url("/img/api/themes/iconsets/flat_w32_h32_w_b_v2.png");
+	background-repeat: no-repeat;
+	color: white;
+	height: 32px;
+	line-height: 32px;
+	padding: 0 0 0 35px;
+	text-align: left;
+	text-decoration: none;
+	width: 143px;
+	background-position: -500px -500px;
+	border-radius: 2px;
 }
 
 .plugin #providers .provider .button .tick {
@@ -123,16 +142,23 @@
 	top: -3px;
 }
 
-.plugin #providers .provider .name {
-	color: #555;
-	text-align: center;
-	font-size: 11px;
-	line-height: 14px;
-	margin: 1px 0 2px;
-}
-
 .plugin #providers .provider_linked .button .tick {
 	background: url("/img/api/themes/assets/tick.png") no-repeat 0 0 transparent;
+}
+
+.plugin #providers .provider .name {
+	border-left: 1px solid rgba(255, 255, 255, 0.22);
+	color: #fff;
+	cursor: pointer;
+	display: block !important;
+	font-size: 12px;
+	line-height: 30px;
+	margin: -31px 0 0 35px;
+	padding-left: 10px;
+	position: absolute;
+	text-align: left;
+	width: 132px;
+	z-index: 9999;
 }
 
 .plugin .footer {
@@ -172,288 +198,302 @@
 	text-decoration: underline;
 }
 
-/* Custom */
-.plugin #providers .provider {
-	width: 178px !important;
-	padding: 2px 4px 4px 2px;
-}
-
-.plugin #providers .provider .button {
-	background-image: url("/img/api/themes/iconsets/flat_w32_h32_w_b_v2.png");
-	background-repeat: no-repeat;
-	background-color: #FFF;
-	color: #000;
-	height: 32px !important;
-	width: 143px !important;
-	line-height: 32px;
-	padding: 0 0 0 35px;
-	text-align: left;
-	text-decoration: none;
-	background-position: -500px -500px;	
-	border-radius: 2px;
-}
-
-@media only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2/1),
-only screen and (-webkit-min-device-pixel-ratio: 2),
+@media only screen and (min--moz-device-pixel-ratio: 2), 
+only screen and (-o-min-device-pixel-ratio: 2/1), 
+only screen and (-webkit-min-device-pixel-ratio: 2), 
 only screen and (min-device-pixel-ratio: 2) {
-    .plugin #providers .provider .button {
-        background-image: url("/img/api/themes/iconsets/flat_w64_h64_w_b_v1.png");
-        background-size: 32px;
-    }
-}
-
-.plugin #providers .provider {
-	opacity: 1;
-}
-
-.plugin #providers .provider:hover {
-	opacity: 0.8;
+	.plugin #providers .provider .button {
+		background-image: url("/img/api/themes/iconsets/flat_w64_h64_w_b_v1.png");
+		background-size: 32px;
+	}
 }
 
 .plugin #providers .providers_group .scroll div {
 	margin: 0 auto !important;
 }
 
-.plugin #providers .provider .name {
-	border-left: 1px solid #333;
-	color: #fff;
-    cursor: pointer;
-    display: block !important;
-    font-size: 12px;
-    line-height: 29px;
-    margin: -31px 0 0 35px;
-    padding-left: 10px;
-    position: absolute;
-    text-align: left;
-    width: 132px;
-    z-index: 9999;
-}
-
 /* Buttons */
 .plugin #providers .provider #button_amazon {
 	background-position: 2px -39px;
+	background-color: #FF9900;
 }
 
 .plugin #providers .provider #button_aol {
 	background-position: 2px -141px;
+	background-color: #000000;
 }
 
 .plugin #providers .provider #button_blogger {
 	background-position: 2px -197px;
+	background-color: #F57D00;
 }
 
 .plugin #providers .provider #button_deviantart {
 	background-position: 2px -329px;
+	background-color: #4B5;
 }
 
 .plugin #providers .provider #button_digg {
 	background-position: 2px -356px;
+	background-color: #14589E;
 }
 
 .plugin #providers .provider #button_disqus {
 	background-position: 2px -435px;
+	background-color: #36D794;
 }
 
 .plugin #providers .provider #button_draugiem {
 	background-position: 2px -513px;
+	background-color: #FF6600;
 }
 
 .plugin #providers .provider #button_dribbble {
 	background-position: 2px -593px;
+	background-color: #EA4C89;
 }
 
 .plugin #providers .provider #button_facebook {
 	background-position: 2px -988px;
+	background-color: #4267B2;
 }
 
 .plugin #providers .provider #button_flickr {
 	background-position: 2px -1066px;
+	background-color: #0063DB;
 }
 
 .plugin #providers .provider #button_foursquare {
 	background-position: 2px -1145px;
+	background-color: #2398C9;
 }
 
 .plugin #providers .provider #button_github {
 	background-position: 2px -1225px;
+	background-color: #4183C4;
 }
 
 .plugin #providers .provider #button_googleplus {
 	background-position: 2px -1382px;
+	background-color: #D14836;
 }
 
 .plugin #providers .provider #button_instagram {
 	background-position: 2px -1462px;
+	background-color: #3F729B;
 }
 
 .plugin #providers .provider #button_linkedin {
 	background-position: 2px -1541px;
+	background-color: #007FB1;
 }
 
 .plugin #providers .provider #button_livejournal {
 	background-position: 2px -1619px;
+	background-color: #195397;
 }
 
 .plugin #providers .provider #button_mailru {
 	background-position: 2px -1699px;
+	background-color: #134785;
 }
 
 .plugin #providers .provider #button_myspace {
 	background-position: 2px -1936px;
+	background-color: #008DDE;
 }
 
 .plugin #providers .provider #button_netlog {
 	background-position: 2px -1833px;
+	background-color: #000000;
 }
 
 .plugin #providers .provider #button_odnoklassniki {
 	background-position: 2px -2014px;
+	background-color: #E77924;
 }
 
 .plugin #providers .provider #button_openid {
 	background-position: 2px -2094px;
+	background-color: #F7931E;
 }
 
 .plugin #providers .provider #button_paypal {
 	background-position: 2px -2172px;
+	background-color: #1F356F;
 }
 
 .plugin #providers .provider #button_pinterest {
 	background-position: 2px -2251px;
+	background-color: #CB2027;
 }
 
 .plugin #providers .provider #button_reddit {
 	background-position: 2px -2331px;
+	background-color: #FF4500;
 }
 
 .plugin #providers .provider #button_skyrock {
 	background-position: 2px -2410px;
+	background-color: #009AFF;
 }
 
 .plugin #providers .provider #button_spotify {
 	background-position: 2px -2489px;
+	background-color: #80B719;
 }
 
 .plugin #providers .provider #button_stackexchange {
 	background-position: 2px -2567px;
+	background-color: #1F5196;
 }
 
 .plugin #providers .provider #button_steam {
 	background-position: 2px -2646px;
+	background-color: #000000;
 }
 
 .plugin #providers .provider #button_tencentqq {
 	background-position: 2px -2726px;
+	background-color: #000;
 }
 
 .plugin #providers .provider #button_tumblr {
 	background-position: 2px -2805px;
+	background-color: #2A364A;
 }
 
 .plugin #providers .provider #button_twitch {
 	background-position: 2px -2884px;
+	background-color: #6441A5;
 }
 
 .plugin #providers .provider #button_twitter {
 	background-position: 2px -2963px;
+	background-color: #00ACED;
 }
 
 .plugin #providers .provider #button_typepad {
 	background-position: 2px -3042px;
+	background-color: #000;
 }
 
 .plugin #providers .provider #button_verisign {
 	background-position: 2px -3121px;
+	background-color: #FFC10C;
 }
 
 .plugin #providers .provider #button_viadeo {
 	background-position: 2px -3277px;
+	background-color: #F4982B;
 }
 
 .plugin #providers .provider #button_vimeo {
 	background-position: 2px -3278px;
+	background-color: #44BBFF;
 }
 
 .plugin #providers .provider #button_vine {
 	background-position: 2px -3495px;
+	background-color: #00A47A;
 }
 
 .plugin #providers .provider #button_vk {
 	background-position: 2px -3574px;
+	background-color: #45668E;
 }
 
 .plugin #providers .provider #button_vkontakte {
 	background-position: 2px -3516px;
+	background-color: #45668E;
 }
 
 .plugin #providers .provider #button_windowslive {
 	background-position: 2px -1777px;
+	background-color: #2f2f2f;
 }
 
 .plugin #providers .provider #button_wordpress {
 	background-position: 2px -3674px;
+	background-color: #21759B
 }
 
 .plugin #providers .provider #button_yahoo {
 	background-position: 2px -3832px;
+	background-color: #731A8B;
 }
 
 .plugin #providers .provider #button_youtube {
 	background-position: 2px -3911px;
+	background-color: #FF0000;
 }
 
 .plugin #providers .provider #button_battlenet {
 	background-position: 2px -3990px;
+	background-color: #FFF;
 }
 
 .plugin #providers .provider #button_pixelpin {
-	background-position: 2px -4069px;
+	background-position: 2px -5649px;
+	background-color: #28265a;
 }
 
 .plugin #providers .provider #button_storage {
 	background-position: 2px -4149px;
+	background-color: #717171;
 }
 
 .plugin #providers .provider #button_meetup {
 	background-position: 2px -5018px;
+	background-color: #ED1C40;
 }
 
 .plugin #providers .provider #button_xing {
-    background-position: 2px -3752px;
+	background-color: #007575;
+	background-position: 2px -3752px;
 }
 
 .plugin #providers .provider #button_line {
 	background-position: 2px -5096px;
+	background-color: #5cbb2b;
 }
 
 .plugin #providers .provider #button_soundcloud {
 	background-position: 2px -5175px;
+	background-color: #FF7200;
 }
 
 .plugin #providers .provider #button_discord {
 	background-position: 2px -5254px;
+	background-color: #7289DA;
 }
 
 .plugin #providers .provider #button_weibo {
 	background-position: 2px -4703px;
+	background-color: #CB2123;
 }
 
 .plugin #providers .provider #button_patreon {
 	background-position: 2px -5412px;
+	background-color: #F45647;
 }
+
 .plugin #providers .provider #button_mixer {
 	background-position: 2px -5491px;
+	background-color: #05193d;
 }
 
 .plugin #providers .provider #button_google {
-	background-position: 2px -5570px;
+	background-position: 2px -5609px;
+	background-color: #eee;
+}
+
+.plugin #providers .provider #name_google {
+	color: #555;
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .plugin #providers .provider #button_apple {
 	background-position: 2px -5728px;
+	background-color: #000;
 }
-
-
-
-
