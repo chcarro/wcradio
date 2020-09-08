@@ -216,7 +216,13 @@ only screen and (min-device-pixel-ratio: 2) {
 /* Buttons */
 
 .plugin #providers .provider #button_battlenet {
-	background-position: 2px -3990px;
-	background-color: #FFF;
+	 background-color: #FFFFFF;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Poppins';
+  color: #000000;
+  padding: 12px 16px;
+  font-size: 12px;
+  cursor: pointer;
 }
 
