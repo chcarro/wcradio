@@ -16,7 +16,7 @@
 	background-color: transparent;
 	font-size: 12px;
 	color: #333;
-	font-family: Tahoma, Kalimati, Verdana, "Bitstream Vera Sans", "DejaVu Sans", Geneva, Arial, Helvetica, Sans-serif;
+	font-family: Poppins;
 }
 
 .plugin #content {
@@ -121,7 +121,7 @@
 	outline: 0 none;
 	background-image: url("/img/api/themes/iconsets/flat_w32_h32_w_b_v2.png");
 	background-repeat: no-repeat;
-	color: white;
+	color: #fff;
 	height: 32px;
 	line-height: 32px;
 	padding: 0 0 0 35px;
@@ -214,19 +214,28 @@ only screen and (min-device-pixel-ratio: 2) {
 
 /* Buttons */
 
+/* Buttons */
+
 .plugin #providers .provider #button_battlenet {
-    color: #f1af51;
+    color: #000;
+    background-image: url(https://dev.warcraftradio.com/wp-content/uploads/2020/09/bnet-black.png); 
+    background-color: #fff; 
+    background-repeat: no-repeat;
+    background-position: 0px 4px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    padding-left: 20px;
+    vertical-align: middle; 
+
 }
 .plugin #providers .provider#provider_battlenet:hover #button_battlenet {
-    background-color: #f1af51;
-}
-.plugin #providers .provider .name#name_battlenet {
-    border-left: none;
-    color: #f1af51;
-}
-.plugin #providers .provider#provider_battlenet:hover .name#name_battlenet {
-   color: #fff;
-}
-div#name_battlenet:before {
-    content: "Login Via ";
-}
+    background-image: url(https://dev.warcraftradio.com/wp-content/uploads/2020/09/Bnet-White.png); 
+    background-color: #f1af51; 
+    background-repeat: no-repeat;
+    background-position: 0px 4px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    padding-left: 20px;
+    vertical-align: middle;
