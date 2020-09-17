@@ -119,9 +119,8 @@
 	position: relative;
 	z-index: 9998;
 	outline: 0 none;
-	background-image: url("/img/api/themes/iconsets/flat_w32_h32_w_b_v2.png");
 	background-repeat: no-repeat;
-	color: #fff;
+	color: #000;
 	height: 32px;
 	line-height: 32px;
 	padding: 0 0 0 35px;
@@ -147,8 +146,7 @@
 }
 
 .plugin #providers .provider .name {
-	border-left: 1px solid rgba(255, 255, 255, 0.22);
-	color: #fff;
+	color: #000;
 	cursor: pointer;
 	display: block !important;
 	font-size: 12px;
@@ -212,14 +210,13 @@ only screen and (min-device-pixel-ratio: 2) {
 	margin: 0 auto !important;
 }
 
-/* Buttons */
 
 /* Buttons */
 
 .plugin #providers .provider #button_battlenet {
-    color: #000;
+    color: #000000;
     background-image: url(https://dev.warcraftradio.com/wp-content/uploads/2020/09/bnet-black.png); 
-    background-color: #fff; 
+    background-color: #ffffff; 
     background-repeat: no-repeat;
     background-position: 0px 4px;
     border: none;
@@ -230,6 +227,7 @@ only screen and (min-device-pixel-ratio: 2) {
 
 }
 .plugin #providers .provider#provider_battlenet:hover #button_battlenet {
+	color: #ffffff;
     background-image: url(https://dev.warcraftradio.com/wp-content/uploads/2020/09/Bnet-White.png); 
     background-color: #f1af51; 
     background-repeat: no-repeat;
