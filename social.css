@@ -216,7 +216,7 @@ only screen and (min-device-pixel-ratio: 2) {
 .plugin #providers .provider #button_battlenet {
     color: #000000;
     background-image: url(https://dev.warcraftradio.com/wp-content/uploads/2020/09/bnet-black.png); 
-    background-color: #ffffff; 
+    background-color: #ffffff !important; 
     background-repeat: no-repeat;
     background-position: 0px 4px;
     border: none;
